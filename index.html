@@ -28,23 +28,24 @@ body {
   line-height: 1.8;
 }
 
+/* NAV */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(249, 245, 239, 0.92);
+  background: rgba(249, 245, 239, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(139, 110, 82, 0.15);
   padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 56px;
 }
 
 .nav-logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 0.06em;
   color: var(--brown-dark);
@@ -53,50 +54,47 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 36px;
+  gap: 28px;
   list-style: none;
 }
 
 .nav-links a {
   font-family: 'Jost', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-sub);
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-.nav-links a:hover { color: var(--brown-dark); }
-
+/* HERO */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 60px;
+  padding-top: 56px;
 }
 
 .hero-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px 60px 80px 80px;
-  background: var(--warm-cream);
+  padding: 60px 50px 60px 60px;
 }
 
 .hero-eyebrow {
   font-family: 'Jost', sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent-gold);
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(52px, 7vw, 82px);
+  font-size: clamp(48px, 6vw, 78px);
   font-weight: 300;
   line-height: 1.1;
   color: var(--brown-dark);
@@ -110,40 +108,35 @@ nav {
 
 .hero-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+  font-size: 17px;
   font-style: italic;
   color: var(--text-sub);
-  margin-bottom: 40px;
-  letter-spacing: 0.04em;
+  margin-bottom: 32px;
 }
 
 .hero-tagline {
   font-size: 14px;
   color: var(--text-sub);
   line-height: 1.9;
-  max-width: 320px;
-  margin-bottom: 48px;
+  max-width: 300px;
+  margin-bottom: 40px;
   font-weight: 300;
 }
 
 .btn-primary {
   display: inline-block;
   font-family: 'Jost', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--white);
   background: var(--brown-dark);
-  padding: 14px 36px;
+  padding: 14px 32px;
   text-decoration: none;
-  transition: background 0.3s;
   width: fit-content;
 }
 
-.btn-primary:hover { background: var(--brown-mid); }
-
 .hero-right {
-  position: relative;
   overflow: hidden;
 }
 
@@ -154,37 +147,39 @@ nav {
   display: block;
 }
 
-section { padding: 100px 80px; }
+/* SECTIONS */
+section { padding: 80px 60px; }
 
 .section-label {
   font-family: 'Jost', sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent-gold);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .section-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 300;
   color: var(--brown-dark);
   margin-bottom: 24px;
 }
 
+/* ABOUT */
 .about {
   background: var(--white);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: center;
 }
 
 .about-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 10px;
 }
 
 .about-images img {
@@ -194,53 +189,53 @@ section { padding: 100px 80px; }
   display: block;
 }
 
-.about-images img:first-child { margin-top: 40px; }
+.about-images img:first-child { margin-top: 36px; }
 
 .about-text p {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-sub);
   line-height: 1.9;
   font-weight: 300;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .about-divider {
-  width: 40px;
+  width: 36px;
   height: 1px;
   background: var(--accent-gold);
-  margin: 32px 0;
+  margin: 28px 0;
 }
 
+/* FEATURES */
 .features { background: var(--warm-beige); }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
-  margin-top: 52px;
+  margin-top: 44px;
 }
 
 .feature-card {
   background: var(--white);
-  padding: 40px 32px;
+  padding: 36px 28px;
 }
 
 .feature-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 300;
   font-style: italic;
   color: var(--warm-beige);
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .feature-title {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--brown-dark);
-  margin-bottom: 12px;
-  letter-spacing: 0.04em;
+  margin-bottom: 10px;
 }
 
 .feature-text {
@@ -250,14 +245,13 @@ section { padding: 100px 80px; }
   font-weight: 300;
 }
 
+/* GALLERY */
 .gallery {
-  padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery-item {
-  position: relative;
   overflow: hidden;
   aspect-ratio: 3/4;
 }
@@ -267,80 +261,50 @@ section { padding: 100px 80px; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.6s ease;
 }
 
-.gallery-item:hover img { transform: scale(1.04); }
-
+/* INFO */
 .info {
   background: var(--brown-dark);
   color: var(--warm-cream);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
 }
 
 .info-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 8px;
+  margin-top: 24px;
 }
 
-.info-table tr { border-bottom: 1px solid rgba(249, 245, 239, 0.12); }
+.info-table tr { border-bottom: 1px solid rgba(249,245,239,0.12); }
 
 .info-table td {
-  padding: 18px 0;
-  font-size: 14px;
+  padding: 16px 0;
+  font-size: 13px;
   vertical-align: top;
 }
 
 .info-table td:first-child {
-  width: 110px;
+  width: 100px;
   font-family: 'Jost', sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(249, 245, 239, 0.5);
-  padding-right: 20px;
+  color: rgba(249,245,239,0.5);
+  padding-right: 16px;
 }
 
 .info-table td:last-child {
-  color: rgba(249, 245, 239, 0.85);
+  color: rgba(249,245,239,0.85);
   font-weight: 300;
   line-height: 1.7;
 }
 
-.info-map-placeholder {
-  background: rgba(255, 252, 248, 0.06);
-  border: 1px solid rgba(249, 245, 239, 0.12);
-  border-radius: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 40px;
-  padding: 40px;
-  text-align: center;
-}
-
-.info-map-placeholder p {
-  font-size: 13px;
-  color: rgba(249, 245, 239, 0.45);
-  font-weight: 300;
-}
-
-.access-note {
-  font-size: 13px;
-  color: rgba(249, 245, 239, 0.55);
-  font-weight: 300;
-  line-height: 1.8;
-  margin-top: 24px;
-}
-
 .tel-large {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 300;
   color: var(--accent-gold);
   letter-spacing: 0.06em;
@@ -350,24 +314,52 @@ section { padding: 100px 80px; }
 .badge-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 16px;
+  gap: 6px;
+  margin-top: 14px;
 }
 
 .badge {
   font-family: 'Jost', sans-serif;
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: rgba(196, 150, 90, 0.15);
-  color: rgba(196, 150, 90, 0.85);
-  padding: 5px 12px;
-  border: 1px solid rgba(196, 150, 90, 0.25);
+  background: rgba(196,150,90,0.15);
+  color: rgba(196,150,90,0.85);
+  padding: 4px 10px;
+  border: 1px solid rgba(196,150,90,0.25);
 }
 
+.map-box {
+  background: rgba(255,252,248,0.06);
+  border: 1px solid rgba(249,245,239,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 36px;
+  padding: 36px;
+  text-align: center;
+}
+
+.map-box p {
+  font-size: 13px;
+  color: rgba(249,245,239,0.45);
+  font-weight: 300;
+}
+
+.access-note {
+  font-size: 13px;
+  color: rgba(249,245,239,0.55);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* FOOTER */
 footer {
   background: #2E2219;
-  padding: 40px 80px;
+  padding: 32px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -375,31 +367,87 @@ footer {
 
 .footer-logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   font-style: italic;
-  color: rgba(249, 245, 239, 0.6);
+  color: rgba(249,245,239,0.6);
 }
 
 .footer-copy {
   font-family: 'Jost', sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.1em;
-  color: rgba(249, 245, 239, 0.3);
+  color: rgba(249,245,239,0.3);
 }
 
-@media (max-width: 900px) {
-  nav { padding: 0 20px; }
-  .nav-links { gap: 20px; }
-  .hero { grid-template-columns: 1fr; height: auto; }
-  .hero-right { height: 280px; }
-  .hero-left { padding: 60px 24px; }
-  section { padding: 60px 24px; }
-  .about { grid-template-columns: 1fr; gap: 40px; }
-  .features-grid { grid-template-columns: 1fr; }
+/* ========== TABLET ========== */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; height: 52px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 10px; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 52px;
+  }
+  .hero-right { height: 55vw; min-height: 220px; }
+  .hero-left { padding: 44px 24px; }
+  .hero-tagline { max-width: 100%; }
+
+  section { padding: 56px 24px; }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 56px 24px;
+  }
+  .about-images img:first-child { margin-top: 0; }
+
+  .features-grid { grid-template-columns: 1fr; gap: 2px; }
+
   .gallery { grid-template-columns: 1fr 1fr; }
-  .info { grid-template-columns: 1fr; }
-  footer { flex-direction: column; gap: 16px; text-align: center; }
+
+  .info {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 56px 24px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 28px 24px;
+  }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 480px) {
+  .nav-links { display: none; }
+  nav { justify-content: center; }
+
+  .hero-title { font-size: 52px; }
+  .hero-eyebrow { font-size: 9px; }
+
+  .section-title { font-size: 28px; }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+  .about-images img {
+    aspect-ratio: 4/3;
+  }
+
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .gallery-item { aspect-ratio: 1/1; }
+
+  .tel-large { font-size: 22px; }
+
+  .info-table td { font-size: 13px; }
+  .info-table td:first-child { width: 80px; font-size: 9px; }
+
+  .badge { font-size: 8px; padding: 4px 8px; }
 }
 </style>
 </head>
@@ -415,26 +463,21 @@ footer {
   </ul>
 </nav>
 
-<section class="hero" style="padding: 0;">
+<section class="hero" style="padding:0;">
   <div class="hero-left">
     <div class="hero-eyebrow">Hair Salon — Yokohama Tsuzuki</div>
     <div class="hero-title"><em>ism</em><br>&amp; Powder</div>
     <div class="hero-subtitle">あなただけのヘアスタイルを</div>
-    <p class="hero-tagline">
-      横浜・都筑区の小さなサロン。<br>
-      一人のスタイリストが、最初から最後まで担当します。
-    </p>
+    <p class="hero-tagline">横浜・都筑区の小さなサロン。<br>一人のスタイリストが、最初から最後まで担当します。</p>
     <a href="#info" class="btn-primary">アクセス &amp; ご予約</a>
   </div>
   <div class="hero-right">
-    <!-- 外観写真をここに差し替えてください -->
     <img src="gaikan.jpg" alt="ism & Powder 外観">
   </div>
 </section>
 
 <section class="about" id="about">
   <div class="about-images">
-    <!-- ロゴ画像・店内写真を差し替えてください -->
     <img src="logo.jpg" alt="ロゴ">
     <img src="naibu.jpg" alt="店内">
   </div>
@@ -442,15 +485,9 @@ footer {
     <div class="section-label">Our Story</div>
     <div class="section-title">癒しと技術が<br>出会う場所</div>
     <div class="about-divider"></div>
-    <p>
-      リニューアルオープンから2年。イズム＆パウダーは、横浜・都筑区仲町台に佇む4席だけの小さなサロンです。
-    </p>
-    <p>
-      「癒し効果抜群」と評判の店内で、一人のスタイリストがシャンプーからスタイリングまでを一貫して担当。あなたのくせや骨格を深く理解したうえで、オリジナルのヘアスタイルを創造します。
-    </p>
-    <p>
-      完全予約制だから、待ち時間なし。お子さまのご同伴も大歓迎です。
-    </p>
+    <p>リニューアルオープンから2年。イズム＆パウダーは、横浜・都筑区仲町台に佇む4席だけの小さなサロンです。</p>
+    <p>「癒し効果抜群」と評判の店内で、一人のスタイリストがシャンプーからスタイリングまでを一貫して担当。あなたのくせや骨格を深く理解したうえで、オリジナルのヘアスタイルを創造します。</p>
+    <p>完全予約制だから、待ち時間なし。お子さまのご同伴も大歓迎です。</p>
   </div>
 </section>
 
@@ -477,9 +514,8 @@ footer {
 </section>
 
 <div class="gallery" id="gallery">
-  <!-- 写真は実際の画像ファイルに差し替えてください -->
   <div class="gallery-item"><img src="gaikan.jpg" alt="外観"></div>
-  <div class="gallery-item"><img src="naibu.jpg" alt="店内セット"></div>
+  <div class="gallery-item"><img src="naibu.jpg" alt="店内"></div>
   <div class="gallery-item"><img src="room.jpg" alt="個室"></div>
   <div class="gallery-item"><img src="logo.jpg" alt="ロゴ"></div>
 </div>
@@ -496,45 +532,26 @@ footer {
       <span class="badge">禁煙</span>
       <span class="badge">駐車場あり</span>
     </div>
-    <table class="info-table" style="margin-top:32px;">
-      <tr>
-        <td>住所</td>
-        <td>〒224-0041<br>神奈川県横浜市都筑区仲町台1-14-31</td>
-      </tr>
-      <tr>
-        <td>営業時間</td>
-        <td>10:00〜20:00<br><span style="font-size:12px; opacity:0.6;">（早朝予約可能）</span></td>
-      </tr>
-      <tr>
-        <td>定休日</td>
-        <td>火曜日・第3水曜日</td>
-      </tr>
-      <tr>
-        <td>席数</td>
-        <td>4席</td>
-      </tr>
-      <tr>
-        <td>カード</td>
-        <td>使用不可（現金のみ）</td>
-      </tr>
+    <table class="info-table">
+      <tr><td>住所</td><td>〒224-0041<br>神奈川県横浜市都筑区仲町台1-14-31</td></tr>
+      <tr><td>営業時間</td><td>10:00〜20:00<br><span style="font-size:11px;opacity:0.6;">（早朝予約可能）</span></td></tr>
+      <tr><td>定休日</td><td>火曜日・第3水曜日</td></tr>
+      <tr><td>席数</td><td>4席</td></tr>
+      <tr><td>カード</td><td>使用不可（現金のみ）</td></tr>
     </table>
   </div>
-
   <div>
     <div class="section-label">Access</div>
     <div class="section-title" style="color:var(--warm-cream);">アクセス</div>
-    <div class="info-map-placeholder">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(249,245,239,0.5)" stroke-width="1.5">
+    <div class="map-box">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(249,245,239,0.4)" stroke-width="1.5">
         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
         <circle cx="12" cy="9" r="2.5"/>
       </svg>
       <p>仲町台駅 徒歩圏内</p>
       <p style="font-size:11px;">横浜市営地下鉄グリーンライン</p>
     </div>
-    <p class="access-note">
-      お車でのご来店も可能です。駐車場完備。<br>
-      ご予約・道順のお問い合わせはお電話にてお気軽にどうぞ。
-    </p>
+    <p class="access-note">お車でのご来店も可能です。駐車場完備。<br>ご予約・道順のお問い合わせはお電話にてお気軽にどうぞ。</p>
   </div>
 </section>
 
